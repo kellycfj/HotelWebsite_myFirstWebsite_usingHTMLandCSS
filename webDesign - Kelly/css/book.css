@@ -1,0 +1,68 @@
+/*start book now */
+
+.form-customers {
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+.form2 {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 10px 0;
+    background: #7dbbb9;
+    padding: 20px 30px;
+    outline: none;
+    color: #ecf0f1;
+    transition: 0.5;
+}
+#check{ /*check-in and check-out date*/
+    width: 37.30%;
+    margin: 8px 0;
+    margin-top: 2px;
+    box-sizing: border-box;
+    background: #7dbbb9;
+    padding: 10px 10px;
+    outline: none;
+    color: #ecf0f1;
+    transition: 0.5;      
+}
+#quant{ /*check-in and check-out date*/
+    width: 10%;
+    margin: 8px 0;
+    margin-top: 2px;
+    box-sizing: border-box;
+    background: #7dbbb9;
+    padding: 10px 10px;
+    outline: none;
+    color: #ecf0f1;
+    transition: 0.5;      
+}
+label.checktext, .quantity{
+  color:  #2a5d68;
+  margin: auto;
+  padding-right: 1px;
+    
+}
+textarea.contact-form {
+    resize: none;
+    height: 120px;
+}
+
+.form-btn {
+    float: right;
+    border: 0;
+    background-color: #7dbbb9;
+    color: #E5E5E5;
+    padding: 12px 50px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-btn:hover {
+    background: #2a5d68;
+}
+
+/*end book now*/

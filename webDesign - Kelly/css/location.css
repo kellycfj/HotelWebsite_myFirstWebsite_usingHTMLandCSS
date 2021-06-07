@@ -1,0 +1,48 @@
+.boxright {
+    float: right;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width:350px;height:350px;margin-right:40px;           
+}
+
+div.options {
+    border: 0px solid transparent;
+    background: #c5d7d9;
+    color: #2a5d68;
+    border-top: 1px #777 solid;
+    padding-left: 7%;
+    padding-right: 5%;
+    overflow: auto;
+
+}
+
+.description{
+    padding-top: 40px;
+    
+}
+
+.options h1{
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.transport {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    /*border: 1px solid #ddd;*/
+    text-align: center;
+
+}
+
+.transport th,
+td {
+    text-align: left;
+    padding: 5px;
+    
+}
+
+.transport tr:nth-child(even) {
+    background-color: transparent;
+}

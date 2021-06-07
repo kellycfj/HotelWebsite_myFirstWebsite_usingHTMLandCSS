@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/photos.css">
+    <script src="main.js"></script>
+    <script src="jquery.js"></script>
+    <!-- reference slick start --><link rel="stylesheet" type="text/css" href="./css/slick.css" /><!-- reference slick end -->
+     <!-- reference copy Font Awesome start -->
+     <script src="https://kit.fontawesome.com/03d3a58230.js" crossorigin="anonymous"></script>
+     <!-- reference copy Font Awesome end-->
+    <title>Acerola B&B</title>
+
+</head>
+
+<body>
+  <!-- starts header----------------------------------------------------------------------------------------------->
+  <div class="logo"><a href="index.html"><img src="./img/logoAcerola3.png" width="300px" height="130px" /></a></div>
+  <nav>
+      <ul class="menu">
+          <li class="welcome"><a href="#">Welcome to Acerola B&B</a></li>
+          <li class="item"><a href="index.html">Home</a></li>
+          <li class="item"><a href="about.html">About</a></li>
+          <li class="item"><a href="contact.html">Contact</a></li>
+          <li class="item"><a href="location.html">Location</a></li>
+          <li class="item"><a href="photos.html">Photos</a></li>
+          <li class="item"><a href="rooms.html">Rooms</a></li>
+          <li class="item"><a href="book.html">Book Now</a>
+          </li>
+          <li class="item button"><a href="mailto:info@acerolabnb.ie" target="blank">✉️info@acerolabnb.ie</a></li>
+          <li class="item button secondary"><a href="tel:+353111111111">+353 01 100 1000</a></li>
+          <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+      </ul>
+  </nav> <!-- ends header----------------------------------------------------------------------------------------->
+
+
+<!-- starts container----------------------------------------------------------------------------------------------->
+    <div class="container">
+
+    <!-- start page content ---------------------------------------------------------------------------------------->
+    <div> &nbsp;
+        <h1 id="title-toppage"> Photos Gallery</h1>
+        <p id="subtitle-toppage"></p>
+    </div><br>
+
+<!--starts photos-------------------------------------------------------------------------------->  
+<div class="photos">
+<div class="mySlides">
+    <div class="numbertext">1 / 12</div>
+    <img src="img/ph-castleafternoon.jpg" >
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 12</div>
+    <img src="img/ph-citypharmacy.jpg" >
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 12</div>
+    <img src="img/ph-riverdance.jpg" >
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 12</div>
+    <img src="img/ph-montaingreen.jpg" >
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 12</div>
+    <img src="img/ph-cycling1.jpg" >
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 12</div>
+    <img src="img/montainPark.jpg" >
+  </div>
+  
+   <div class="mySlides">
+    <div class="numbertext">7 / 12</div>
+    <img src="img/living-room.jpg">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">8 / 12</div>
+    <img src="img/room-superiorlightblue.jpg" >
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">9 / 12</div>
+    <img src="img/room-superior gold.jpg" >
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">10 / 12</div>
+    <img src="img/room-familyblue.jpg" >
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">11 / 12</div>
+    <img src="img/room-bath.jpg" >
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">12 / 12</div>
+    <img src="img/room-standard.jpg" >
+  </div>
+    
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-photos">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="img/ph-castleafternoon.jpg"  onclick="currentSlide(1)" alt="Castle Ross">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/ph-citypharmacy.jpg"  onclick="currentSlide(2)" alt="Killarney">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/ph-riverdance.jpg"  onclick="currentSlide(3)" alt="River Dance">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/ph-montaingreen.jpg"  onclick="currentSlide(4)" alt="Mountains">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/ph-cycling1.jpg"  onclick="currentSlide(5)" alt="Cycling">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="img/montainPark.jpg"  onclick="currentSlide(6)" alt="Killarney Park">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/living-room.jpg"  onclick="currentSlide(7)" alt="Killarney">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/room-superiorlightblue.jpg"  onclick="currentSlide(8)" alt="Flower">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/room-superior gold.jpg"  onclick="currentSlide(9)" alt="Superior Room">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/room-familyblue.jpg"  onclick="currentSlide(10)" alt="Family Room">
+    </div> 
+      <div class="column">
+      <img class="demo cursor" src="img/room-bath.jpg"  onclick="currentSlide(11)" alt="Bath">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/room-standard.jpg"  onclick="currentSlide(12)" alt="Standard Room">
+    </div>
+  </div>
+</div>
+    <!--/ end page content -->
+
+    <!--start back link-->
+    <br>
+    <div class="titles">
+        <h1><a href="index.html">Back</a></h1><br>
+    </div>
+    <!--/end back link-->
+
+
+  </div>
+  <!-- Container ends----------------------------------------------------------------------------------------------->
+  
+      <footer>
+        <!-- Footer starts ------------------------------------------------------------------------------------------->
+        <section class="ft-main">
+          <div class="ft-main-item">
+            <h2 class="ft-title">Acerola B&B</h2>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="location.html">Location</a></li>
+              <li><a href="#" target="_blank"></a></li>
+            </ul>
+          </div>
+          <div class="ft-main-item">
+            <h2 class="ft-title">Reservation</h2>
+            <ul>
+              <li><a href="rooms.html">Rooms</a></li>
+              <li><a href="photos.html">Photos</a></li>
+              <li><a href="https://www.killarneynationalpark.ie/" target="_blank">Killarney</a></li>
+              <li><a href="location.html">Map</a></li>
+            </ul>
+          </div>
+          <div class="ft-main-item">
+            <h2 class="ft-title">Contact</h2>
+            <ul>
+              <li><a href="book.html" target="_blank">Book Now</a></li>
+              <li><a href="mailto:info@acerolabnb.ie" target="_blank" title="info@acerolabnb.ie">E-mail</a></li>
+              <li><a href="tel:+353111111111" target="_blank" title="+353 11 111 1111">Phone</a></li>
+              <li><a href="https://wa.me/353111111111" target="_blank" title="+353 11 111 1111">WhatsApp</a></li>
+            </ul>
+          </div>
+          <div class="ft-main-item">
+            <h2 class="ft-title">Stay Updated</h2>
+            <p>Subscribe to our newsletter to get our latest news.</p>
+            <form>
+              <input type="email" name="email" placeholder="Enter email address">
+              <input type="submit" value="Subscribe" onclick="alert('Subscribed!')">
+            </form>
+          </div>
+        </section>
+       
+        <!-- Footer social -->
+        <section class="ft-social">
+          <ul class="ft-social-list">
+            <li><a href="https://www.facebook.com/killarney.ie/" target="_blank"><i
+              class="fab fa-facebook-square fa-1x" title="Facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/explore/locations/260875333/killarney-national-park-ireland/?hl=en"
+              target="_blank"><i class="fab fa-instagram-square fa-1x" title="Instagram"></i></a></li>
+            <li><a href="https://wa.me/353111111111" target="_blank"><i class="fab fa-whatsapp-square fa-1x"
+              target="_blank" title="WhatsApp"></i></li>
+            <li><a href="mailto:info@acerolabnb.ie" target="_blank"><i
+              class="fas fa-envelope-square fa-1x" target="_blank" title="E-mail"></i></li>
+            <li><a href="https://www.linkedin.com/in/kelly-crystine-f-jesus-b2b510b6" target="_blank"
+              alt="Profile Picture" title="LinkedIn"><i class="fab fa-linkedin fa-1x"></i></a></li>
+            <li><a href="https://www.youtube.com/watch?v=tTSN33fvdPk" target="_blank" title="YouTube"><i class="fab fa-youtube fa-1x"></i></a></li>
+          </ul>
+        </section>
+  
+       
+        <!-- Footer legal -->
+        <section class="ft-legal">
+          <ul class="ft-legal-list">
+          <li><a href="#">Terms &amp; Conditions</a></li>
+            <li><a href="#">Kelly F. Jesus</a></li>
+            <li>&copy; 2020 CCT Web Design</li>
+          </ul>
+        </section>
+      </footer>
+
+  <!--back top button--------------------------------------------------------------------------------------->
+  <button onclick="topFunction()" id="mytopBtn" title="Back to top">Top</button>
+
+  <!-- reference jquery----------------------------------------------------------------------------------------------->
+  <script type="text/javascript" src="./js/jquery.js"></script>
+ 
+        
+</body>
+
+</html>

@@ -1,0 +1,512 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: 'Open Sans';
+    background-color: white;
+}
+
+.container {
+    flex: 1;    /* same as flex-grow: 1; */
+}
+
+* {
+    box-sizing: border-box;
+    font-family: ’Lato’, sans-serif;
+    margin: 0; 
+    padding: 0;
+}
+
+h1, h2,h3,p{
+    color: #2a5d68;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+
+/* logo*************************************** */
+.logo a:hover {
+    text-decoration: none;
+}
+.logo{
+    background-color: whitesmoke;
+    padding: 5px 20px;
+}
+
+/* navegation*************************************** */
+
+nav {
+    background: #7f8181;
+    padding: 5px 20px;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.welcome a:hover {
+    text-decoration: none;
+}
+.menu li {
+    font-size: 16px;
+    padding: 15px 5px;
+    white-space: nowrap;
+}
+.welcome a,
+.toggle a {
+    font-size: 20px;
+}
+.button.secondary {
+    border-bottom: 1px #444 solid;
+}
+/* Mobile menu */
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+/* 'one' before the last child */
+.menu li:nth-last-child(3) {
+    text-transform: lowercase;
+}
+.toggle {
+    order: 1;
+}
+.item.button {
+    order: 2;
+}
+.item {
+    width: 100%;
+    text-align: center;
+    order: 3;
+    display: none;
+}
+.item.active {
+    display: block;
+}
+/* Tablet menu */
+@media all and (min-width: 600px) {
+    .menu {
+        justify-content: center;
+    }
+    .welcome {
+        flex: 1;
+    }
+    .toggle {
+        flex: 1;
+        text-align: right;
+    }
+    .item.button {
+        width: auto;
+        order: 1;
+        display: block;
+    }
+    .toggle {
+        order: 2;
+    }
+    .button.secondary {
+        border: 0;
+    }
+    .button a {
+        padding: 7.5px 15px;
+        background: #2a5d68;
+        border: 1px #006d6d solid;
+        border-radius: 4px;  
+    }
+    .button.secondary a {
+        background: transparent; 
+        border-radius: 4px;   
+    }
+    .button a:hover {
+        text-decoration: none;
+    }
+    .button:not(.secondary) a:hover {
+        background: #006d6d;
+        border-color: #005959;
+    }
+    .button.secondary a:hover {
+        color: #ddd;
+    } 
+}
+/* Desktop menu */
+@media all and (min-width: 900px) {
+    .item {
+        display: block;
+        width: auto;
+    }
+    .toggle {
+        display: none;
+    }
+    .welcome  {
+        order: 0;
+    }
+    .item {
+        order: 1;
+    }
+    .button {
+        order: 2;
+    }
+    .menu li {
+        padding: 15px 10px;
+    }
+    .menu li.button {
+        padding-right: 0;
+    }
+}
+
+/* geral input style + read more/read less button**************************************************/
+input[type=text], input[type=email], input[type=date], button[id="myreadBtn"], 
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type="submit"] { /* geral submit style ******************************/
+    background-color:  #7dbbb9;
+    color: #E5E5E5;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 0;
+    padding: 0.625rem 0.9375rem;
+    margin-top: 0.3125rem;
+}
+
+
+/* Next & previous buttons - Slick.com***********************************************************************************/
+button.slick-prev {
+    position: absolute;
+    top: 1%;
+    height: 400px;
+    width: 200px;
+    padding: 16px;
+    margin-top: -50px;
+    background-color: transparent;
+    font-size: 0px;
+    z-index: 3;
+    border: transparent;
+    user-select: none;
+    -webkit-user-select: none;
+    left: 1%;
+}
+
+button.slick-next {
+    position: absolute;
+    top: 1%;
+    height: 400px;
+    width: 200px;
+    padding: 16px;
+    margin-top: -50px;
+    background-color: transparent;
+    font-size: 0px;
+    z-index: 3;
+    border: transparent;
+    user-select: none;
+    -webkit-user-select: none;
+    right: 1%;
+}
+
+/*slide buttons***********************************************************************************/
+/* button bottom slide page */
+button.slick-prev:hover, .slick-next:hover {
+    background-color: #d8d3d0 ;
+    opacity:0.1;
+    }
+    .slick-list {
+        width: 100%!important;
+    }
+    .slick-initialized {
+        overflow: hidden;
+    }
+     .slick-dots li button { /*style the botton dots */
+            font-size: 0px;
+            border: 2px solid #dcdbe1;
+            opacity: 0.5;
+            width: 35px;
+            height: 5px;
+            background: transparent;
+            border-radius: 20%;
+            cursor: pointer;       
+    }
+     .slick-dots {
+            margin: 0 auto;
+            width: 100%;
+            position: absolute;
+            left: 45%;           
+            top: 440px;
+    }
+    li.slick-active button { /*style the colour inside the botton dots */
+    background: #7dbbb9;
+    }
+    .slick-dots li { /*space between dots*/
+    padding-left: 10px;
+    display: inline-block;
+    }
+
+     /*text home page *****************************************************************************************/
+     .text-highlight {
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .text-highlight strong{
+        color: rgb(21, 116, 45);
+    }
+
+    .text-highlight h1 {
+        text-transform: none;
+        font-size: 30px;
+        color: #818181;
+    }
+    .text-highlight p {
+        font-size: 15px;
+        color: #9a9a9a;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+
+/*back button***********************************************************************************************/ 
+.titles{
+    padding-left: 10px;
+    }
+    .titles a{
+    border: 1px solid gray;
+    width: 100px;
+    height: 50px;
+    padding-top: 5px;
+    margin-right: 5px;
+    text-align: center;
+    display: inline-block;
+    color: #c5d7d9;
+    text-decoration: none;
+    font-size: 1em;
+    border-radius: 5px;
+    transition: all .3s;
+    }
+    .titles a:hover{
+    border: 1px solid #2a5d68;
+    color: #7dbbb9;
+    opacity: 0.7;
+    transition: all .3s;
+    }
+/*/ends back button*****************************************************************************/
+
+/*home gallery photos*******************************************************************************/
+div.homephoto {
+    border: 1px solid #ccc;
+  }
+  
+  div.homephoto:hover {
+    border: 1px solid #777;
+  }
+  
+  div.homegallery img {
+    width: 100%;
+    height: 300px;
+  }
+  
+  div.homedesc {
+    padding: 15px;
+    text-align: center;
+    
+  }
+  
+  .homegallery {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  div.homedesc {
+    padding: 15px;
+    text-align: center;
+    color: gray;
+}
+  
+  @media only screen and (max-width: 700px) {
+    .homegallery {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .homegallery {
+      width: 100%;
+    }
+  }  
+  
+/*startd infoFrames******************************************************************************/  
+.infoframe { /* logo image position*/ 
+    float: left;
+    width: 33.33%; 
+    text-align: center;
+}
+.infoframe img { /* logo image location*/ 
+cursor: pointer;
+margin: 0;
+padding-top: 1em;
+vertical-align: middle;
+ 
+}   
+.infoframe img:hover { /*image moviment*/
+    margin-top: 10px!important;
+    position: relative!important;
+}    
+.infoframe iframe:hover { /*image  moviment*/
+    margin-top: 10px!important;
+    position: relative!important;
+}
+.contentinfo {/*define collumn size - background*/
+height: 170px;
+border-top: 1px solid #efefef;
+}
+
+.contentinfo img { 
+margin-top: 20px;
+border-radius: 10px;
+}
+.contentinfo iframe { /*google maps - logoBox*/
+margin-top: 20px;
+border-radius: 10px;
+}
+/*ends infoFrames******************************************************************************/
+
+/*starts footer*************************************************************************************/
+footer {
+    background-color: #7f8181;
+    color: #bbb;
+    line-height: 1.5;
+}
+footer a {
+    text-decoration: none;
+    color: #eee;
+}
+a:hover {
+    text-decoration: underline;
+}
+.ft-title {
+    color: #fff;
+    font-family: ’Merriweather’, serif;
+    font-size: 1.375rem;
+    padding-bottom: 0.625rem;
+}
+.ft-main {
+    padding: 1.25rem 1.875rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.ft-main-item {
+    padding: 1.25rem;
+    min-width: 12.5rem /*200px*/;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.ft-social {
+    padding: 0 1.875rem 1.25rem;
+}
+.ft-social-list {
+    display: flex;
+    justify-content: center;
+    border-top: 1px #777 solid; 
+    padding-top: 1.25rem;
+}
+.ft-social-list li {
+    margin: 0.5rem;
+    font-size: 1.25rem;
+}
+.ft-legal {
+    padding: 0.9375rem 1.875rem;
+    background-color: #333;
+}
+.ft-legal ul li a{
+    color: #777;
+}
+.ft-legal-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.ft-legal-list li {
+    margin: 0.125rem 0.625rem;
+    white-space: nowrap;
+}
+/* one before the last child */
+.ft-legal-list li:nth-last-child(2) {
+    flex: 1;       /* same as flex-grow: 1; */
+}
+
+
+
+@media only screen and (min-width: 29.8125rem /*477px*/) {
+    .ft-main {
+        justify-content: space-around;
+    }
+}
+@media only screen and (min-width: 77.5rem /*1240px*/ ) {
+    .ft-main {
+        justify-content: space-evenly;
+    }
+}
+
+/*ends footer*/
+
+
+/*start </style> top of extra pages***********************************/
+#title-toppage {
+    color: #2a5d68;
+    padding-bottom: 2px;
+    text-align: center;
+}
+#subtitle-toppage {
+    color: #2a5d68;
+    padding-bottom: 2px;
+    text-align: center;
+}
+
+
+/*back to top button ************************************************/
+#mytopBtn {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #2a5d68;
+    opacity: 0.5;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+    height: 36px;
+  }
+  
+  #mytopBtn:hover {
+    background-color: #555;
+  }

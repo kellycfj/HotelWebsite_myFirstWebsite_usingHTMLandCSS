@@ -1,0 +1,58 @@
+.room-column {
+    float: left;
+    width: 50.0%;
+    margin-bottom: 16px;
+    padding: 0px;
+    padding-left: 80px;
+    padding-right: 80px;
+   
+  }
+  
+  
+  @media screen and (max-width: 650px) {
+    .room-column {
+      width: 100%;
+      display: block;
+    }
+  }
+  
+  .room-photo {
+    box-shadow: 0 4px 8px 0 #d8d3d0;
+  }
+
+  .room-photo img{
+    width:100%;
+    height:300px;
+  }
+  
+  .room-box {
+    padding: 0 16px; 
+  }
+  
+  .room-box::after, .room-row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .roomtitle {
+    color: grey;
+  }
+  
+  .roombutton {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    border-radius: 4px;
+    color: white;
+    background-color: #7dbbb9;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .roombutton:hover {
+    background-color: #2a5d68;
+  }
+  

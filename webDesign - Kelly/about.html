@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/about.css">
+    <script src="main.js"></script>
+    <script src="jquery.js"></script>
+    <!-- reference slick start --><link rel="stylesheet" type="text/css" href="./css/slick.css" /><!-- reference slick end -->
+     <!-- reference copy Font Awesome start -->
+     <script src="https://kit.fontawesome.com/03d3a58230.js" crossorigin="anonymous"></script>
+     <!-- reference copy Font Awesome end-->
+    <title>Acerola B&B</title>
+
+
+</head>
+
+<body>
+    <!-- starts header----------------------------------------------------------------------------------------------->
+    <div class="logo"><a href="index.html"><img src="./img/logoAcerola3.png" width="300px" height="130px" /></a></div>
+    <nav>
+        <ul class="menu">
+            <li class="welcome"><a href="#">Welcome to Acerola B&B</a></li>
+            <li class="item"><a href="index.html">Home</a></li>
+            <li class="item"><a href="about.html">About</a></li>
+            <li class="item"><a href="contact.html">Contact</a></li>
+            <li class="item"><a href="location.html">Location</a></li>
+            <li class="item"><a href="photos.html">Photos</a></li>
+            <li class="item"><a href="rooms.html">Rooms</a></li>
+            <li class="item"><a href="book.html">Book Now</a>
+            </li>
+            <li class="item button"><a href="mailto:info@acerolabnb.ie" target="blank">✉️info@acerolabnb.ie</a></li>
+            <li class="item button secondary"><a href="tel:+3531111010">+353 01 100 1000</a></li>
+            <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+        </ul>
+    </nav> <!-- ends header----------------------------------------------------------------------------------------->
+
+<!-- starts container----------------------------------------------------------------------------------------------->
+    <div class="container">
+
+    <!-- start page content (w3Schools)------------------------------------------------------------------>
+    <div> &nbsp;
+        <h1 id="title-toppage"> About Us</h1>
+        <p id="subtitle-toppage"></p>
+    </div><br>
+
+    <div class="about-us">
+        <img src="img/sl-canoe.jpg" alt="hotel" class="image">
+        <div class="overlay">
+            <div class="text">Acerola B&B <br> Welcome! Céad míle fáilte! Seja bem vindo!
+                <br>
+            </div>
+        </div>
+    </div><br>
+    <div class="readmore">
+    <h2>Our History</h2><br>
+    <p>We are a Brazilian / Irish family based in Killarney since 2013. We have been welcoming new visitors and old friends ever since. <br>
+    <br> The Idea for starting a Guest House came from discussions with friends in 2016 about accommodadtion in Killarney. <span id="dots">...</span><span id="more">
+    <br> We saw the need for a confortable place to relax with friends (and friends of friends!). A place that felt like a home away from home.
+    All this within a short walking distance of our beloved National Park. <br>
+    <br> About the name, Acerola cherry is a tree that is native to tropical regions such as Brazil. 
+    Despite being one of our favourite fruits in Brazil, we have a cute Acerola tree in the garden of our home in Brazil. 
+    Naming our B&B as Acerola brought a nice feeling of connection. <br>
+    <br>  <br> Welcome to Acerola B&B! Céad míle fáilte go dtí Acerola B&B! Seja bem vindo ao Acerola B&B!</span></p>
+    <button onclick="myreadmoreFunction()" id="myreadBtn">Read more</button>
+    </div>
+    <!-- /end - page content-->
+
+    <!--start back link-->
+    <br>
+    <div class="titles">
+        <h1><a href="index.html">Back</a></h1><br>
+    </div>
+    <!--/end back link-->
+
+</div>
+<!-- Container ends----------------------------------------------------------------------------------------------->
+
+    <footer>
+      <!-- Footer starts ------------------------------------------------------------------------------------------->
+      <section class="ft-main">
+        <div class="ft-main-item">
+          <h2 class="ft-title">Acerola B&B</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="#" target="_blank"></a></li>
+          </ul>
+        </div>
+        <div class="ft-main-item">
+          <h2 class="ft-title">Reservation</h2>
+          <ul>
+            <li><a href="rooms.html">Rooms</a></li>
+            <li><a href="photos.html">Photos</a></li>
+            <li><a href="https://www.killarneynationalpark.ie/" target="_blank">Killarney</a></li>
+            <li><a href="location.html">Map</a></li>
+          </ul>
+        </div>
+        <div class="ft-main-item">
+          <h2 class="ft-title">Contact</h2>
+          <ul>
+            <li><a href="book.html" target="_blank">Book Now</a></li>
+            <li><a href="mailto:info@acerolabnb.ie" target="_blank" title="info@acerolabnb.ie">E-mail</a></li>
+            <li><a href="tel:+3531111010" target="_blank" title="+353 83 111 1010">Phone</a></li>
+            <li><a href="https://wa.me/3531111010" target="_blank" title="+353 83 111 1010">WhatsApp</a></li>
+          </ul>
+        </div>
+        <div class="ft-main-item">
+          <h2 class="ft-title">Stay Updated</h2>
+          <p>Subscribe to our newsletter to get our latest news.</p>
+          <form>
+            <input type="email" name="email" placeholder="Enter email address">
+            <input type="submit" value="Subscribe" onclick="alert('Subscribed!')">
+          </form>
+        </div>
+      </section>
+     
+      <!-- Footer social -->
+      <section class="ft-social">
+        <ul class="ft-social-list">
+          <li><a href="https://www.facebook.com/killarney.ie/" target="_blank"><i
+            class="fab fa-facebook-square fa-1x" title="Facebook"></i></a></li>
+          <li><a href="https://www.instagram.com/explore/locations/260875333/killarney-national-park-ireland/?hl=en"
+            target="_blank"><i class="fab fa-instagram-square fa-1x" title="Instagram"></i></a></li>
+          <li><a href="https://wa.me/3531111010" target="_blank"><i class="fab fa-whatsapp-square fa-1x"
+            target="_blank" title="WhatsApp"></i></li>
+          <li><a href="mailto:info@acerolabnb.ie" target="_blank"><i
+            class="fas fa-envelope-square fa-1x" target="_blank" title="E-mail"></i></li>
+          <li><a href="https://www.linkedin.com/in/kelly-crystine-f-jesus-b2b510b6" target="_blank"
+            alt="Profile Picture" title="LinkedIn"><i class="fab fa-linkedin fa-1x"></i></a></li>
+          <li><a href="https://www.youtube.com/watch?v=tTSN33fvdPk" target="_blank" title="YouTube"><i class="fab fa-youtube fa-1x"></i></a></li>
+        </ul>
+      </section>
+
+      <!-- Footer legal -->
+      <section class="ft-legal">
+        <ul class="ft-legal-list">
+        <li><a href="#">Terms &amp; Conditions</a></li>
+          <li><a href="#">Kelly F. Jesus</a></li>
+          <li>&copy; 2020 CCT Web Design</li>
+        </ul>
+      </section>
+    </footer>
+<!--ends footer--------------------------------------------------------------------------------------->
+
+  <!--back top button--------------------------------------------------------------------------------------->
+  <button onclick="topFunction()" id="mytopBtn" title="Back to top">Top</button>
+
+  <!-- reference jquery----------------------------------------------------------------------------------------------->
+  <script type="text/javascript" src="./js/jquery.js"></script>
+
+
+
+</body>
+</html>
